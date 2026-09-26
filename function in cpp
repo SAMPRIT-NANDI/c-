@@ -46,4 +46,36 @@ int a , b;
     cout <<a <<" "<<b;//1 , 1
 }
 
-q3]
+q3] SUM OF ITS DIGIT AND REVERSE A CODE
+
+// Online C++ compiler (editor)
+// Write and run C++ online using this editor.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+pair<int,int> processNumber(long long n) {
+      int rev =0;
+    int sum =0;
+
+
+    while(n > 0){
+        int digit = n %10;
+        rev = rev *10 + digit;
+
+        sum += digit;
+        n /= 10;
+        
+    }
+    return { sum , rev};
+}
+
+int main() {
+    // Write C++ code here
+int a , b;
+    cout << " enter  number for its sum";
+    cin >>a ;
+   pair<int,int> result = processNumber(a);
+    cout << result.first << endl<<result.second <<endl ;
+}
