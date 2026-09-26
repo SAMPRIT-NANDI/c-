@@ -1,3 +1,4 @@
+q1] FACTORIAL OF TWO NUMBER :-
 
 #include <iostream>
 using namespace std;
@@ -20,3 +21,29 @@ int main() {
 
     return 0;
 }
+
+Q2] PASS BY VALUE CONCEPT  // copy of argument passed to the function
+
+// Online C++ compiler (editor)
+// Write and run C++ online using this editor.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int add(int x , int y){
+    x = x+y;//2
+     y = x+y;//3
+    int sum = x+y;//5
+    return sum;
+}
+
+int main() {
+    // Write C++ code here
+int a , b;
+    cout << " enter two number for sum";
+    cin >>a >>b;
+   cout << add(a,b) << endl;;
+    cout <<a <<" "<<b;//1 , 1
+}
+
+q3]
